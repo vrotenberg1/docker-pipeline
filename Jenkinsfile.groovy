@@ -9,5 +9,12 @@ pipeline {
               }
             }
         }
+    stage("Test") {
+      steps {
+        script {
+          image.run()
+        }
+      }
+    }
   }
 }
